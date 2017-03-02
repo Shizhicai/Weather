@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="130dp">
+    <TextView
+        style="@style/item_text_style"
+        android:text="长  沙"
+        android:textSize="30sp"
+        android:id="@+id/city"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"/>
+    <TextView
+        android:id="@+id/temperature"
+        style="@style/item_text_style"
+        android:text="12℃"
+        android:textSize="19sp"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/city"/>
+    <TextView
+        android:id="@+id/ganmao"
+        style="@style/item_text_style"
+        android:layout_below="@id/temperature"
+        android:layout_margin="10dp"
+        android:text="      昼夜温差很大，易发生感冒，请注意适当增减衣服，加强自我防护避免感冒。"/>
+</RelativeLayout>

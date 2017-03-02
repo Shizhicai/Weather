@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="120dp">
+    /**
+    * fl : 微风
+    * fx : 东北风
+    * high : 高温 10℃
+    * type : 阴
+    * low : 低温 4℃
+    * date : 24日星期五
+    */
+    <TextView
+        android:text="24日星期五"
+        android:id="@+id/time"
+        android:textSize="14sp"
+        android:paddingLeft="20dp"
+        android:paddingTop="15dp"
+        style="@style/item_text_style" />
+
+    <TextView
+        android:id="@+id/temperature"
+        style="@style/item_text_style"
+        android:layout_below="@id/time"
+        android:paddingTop="15dp"
+        android:paddingLeft="10dp"
+        android:text="高温 10℃ ~ 低温 4℃"/>
+
+    <TextView
+        style="@style/item_text_style"
+        android:id="@+id/wind1"
+        android:layout_below="@id/temperature"
+        android:paddingTop="15dp"
+        android:paddingLeft="10dp"
+        android:text="东北风"/>
+
+    <TextView
+        style="@style/item_text_style"
+        android:id="@+id/wind2"
+        android:layout_below="@id/temperature"
+        android:paddingTop="15dp"
+        android:paddingLeft="40dp"
+        android:layout_toRightOf="@id/wind1"
+        android:text="微风"/>
+
+    <TextView
+        style="@style/item_text_style"
+        android:text="阴"
+        android:id="@+id/type"
+        android:layout_alignParentRight="true"
+        android:textSize="30sp"
+        android:padding="40dp"/>
+</RelativeLayout>
